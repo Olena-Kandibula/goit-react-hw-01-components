@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgb(221, 220, 220);
+}
+
+.title {
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
