@@ -1,8 +1,16 @@
 import Section from './components/section/Section';
 import Container from './components/container/Container';
 import Profile from './components/profile/Profile';
+import Statistics from './components/statistics/Statistics';
+import FriendList from './components/friendList/FriendList';
+import TransactionHistory from './components/transactionHistory/TransactionHistory';
+
 import './App.css';
-import user from './user.json';
+
+import user from './components/profile/user.json';
+import statisticalData from './components/statistics/statistical-data.json';
+import friends from './components/friendList/friends.json';
+import transactions from './components/transactionHistory/transactions.json';
 
 function App() {
   return (
@@ -17,15 +25,19 @@ function App() {
             stats={user.stats}
           />
         </Container>
-      </Section>
-      <Section>
-        <Container title="Задание 2 - Секция статистики"></Container>
-      </Section>
-      <Section>
-        <Container title="Задание 3 - Список друзей"></Container>
-      </Section>
-      <Section>
-        <Container title="Задание 4 - История транзакций"></Container>
+
+        <Container title="Задание 2 - Секция статистики">
+          <Statistics title="Upload stats" stats={statisticalData} />
+          <Statistics stats={statisticalData} />
+        </Container>
+
+        <Container title="Задание 3 - Список друзей">
+          <FriendList friends={friends} />
+        </Container>
+
+        <Container title="Задание 4 - История транзакций">
+          <TransactionHistory items={transactions} />
+        </Container>
       </Section>
     </div>
   );

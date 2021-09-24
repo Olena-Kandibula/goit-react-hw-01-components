@@ -1,8 +1,8 @@
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 40px;
-  background-color: rgb(221, 220, 220);
+  padding: 40px 0;
+  background-color: rgba(3, 63, 104, 0.856);
 }
 
 .title {

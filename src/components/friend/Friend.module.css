@@ -1,0 +1,30 @@
+.status {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.avatar {
+  border-radius: 5px;
+  border: 1px solid rgb(235, 232, 232);
+  padding: 8px;
+  margin-right: 20px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(210, 216, 221, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(210, 216, 221, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(210, 216, 221, 0.2);
+}
+
+.name {
+  font-size: 24px;
+}
+
+/* .statusOk {
+  background-color: #2ecc71;
+}
+
+.statusNo {
+  background-color: #ff5733;
+} */
