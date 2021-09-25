@@ -5,23 +5,20 @@ import randomColor from '../statistics/randomColor';
 function Statistics({ title, stats }) {
   return (
     <section className={s.statistic}>
-      {title && (
-        <>
-          <h2 className={s.title}>{title}</h2>
-          <ul className={s.statList}>
-            {stats.map(stat => (
-              <li
-                key={stat.id}
-                className={s.item}
-                style={{ backgroundColor: randomColor() }}
-              >
-                <span className={s.label}>{stat.label}</span>
-                <span className={s.percentage}>{stat.percentage}%</span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+      {title && <h2 className={s.title}>{title}</h2>}
+
+      <ul className={s.statList}>
+        {stats.map(stat => (
+          <li
+            key={stat.id}
+            className={s.item}
+            style={{ backgroundColor: randomColor() }}
+          >
+            <span className={s.label}>{stat.label}</span>
+            <span className={s.percentage}>{stat.percentage}%</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
