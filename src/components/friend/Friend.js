@@ -5,25 +5,16 @@ import defaultImg from '../friend/defaultImage.jpg';
 function Friend({ avatar = defaultImg, name, isOnline }) {
   return (
     <>
-      <>
+      <span
+        className={s.status}
+        style={
+          isOnline
+            ? { backgroundColor: '#2ECC71' }
+            : { backgroundColor: '#FF5733' }
+        }
+      >
         {' '}
-        {isOnline ? (
-          <span
-            className={s.status}
-            style={{ backgroundColor: '#2ECC71' }}
-          ></span>
-        ) : (
-          <span
-            className={s.status}
-            style={{ backgroundColor: '#FF5733' }}
-          ></span>
-        )}
-      </>
-
-      {/* <span className={s.status}
-                {isOnline ? className = { s.statusOk } : className = { s.statusNo }}
-            
-                > </span> */}
+      </span>
 
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
