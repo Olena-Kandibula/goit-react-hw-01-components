@@ -12,9 +12,7 @@ function Friend({ avatar = defaultImg, name, isOnline }) {
             ? { backgroundColor: '#2ECC71' }
             : { backgroundColor: '#FF5733' }
         }
-      >
-        {' '}
-      </span>
+      ></span>
 
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
